@@ -4,7 +4,7 @@ TAG=latest
 DOCKER_BUILD_FLAGS=--squash
 
 build:
-	docker build ${DOCKER_BUILD_FLAGS} --squash -t ${NAME}:${TAG} .
+	docker build ${DOCKER_BUILD_FLAGS} -t ${NAME}:${TAG} .
 
 run:
 	docker run -it --rm ${NAME}:${TAG}
